@@ -1,0 +1,108 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+
+
+entity fcs_check_serial is
+  port ( 
+    clk            : in std_logic; -- system clock
+    reset          : in std_logic; -- asynchronous reset
+    start_of_frame : in std_logic; -- arrival of the first bit.
+    end_of_frame   : in std_logic; -- arrival of the first bit in FCS.
+    data_in 	 : in std_logic; -- serial input data.
+    fcs_error      : out std_logic -- indicates an error.
+  );
+end fcs_check_serial;
+
+
+architecture fcs_check_serial_arch of fcs_check_serial is
+
+	signal G : std_logic_vector(31 downto 0);
+	signal R : std_logic_vector(31 downto 0);
+	
+	signal data_in_1 : std_logic;
+	
+	signal frame_cnt : integer range 0 to 31;
+	
+	signal end_cnt : integer range 0 to 34; -- 0 is not used for counting, but for enable flag
+	
+	constant zeros : std_logic_vector(31 downto 0) := (others => '0');
+
+BEGIN
+	-- Init values of G
+	G <= "00000100110000010001110110110111"; -- MSB -> LSB
+	    --00000100110000010001110110110111
+	
+	main : process(reset,clk)
+		begin
+			if(reset = '1') then
+			-- reset logic
+				
+				end_cnt <= 0;
+				fcs_error <= '1';
+				
+				data_in_1 <= '0';
+				
+			R <= (others => '0');
+				
+			elsif rising_edge(clk) then
+			
+			-- main logic
+			
+				-- Handle start of frame ! -- TODO: implement inversion
+					if(start_of_frame = '1') then
+						-- reset R 
+						R <= (others => '0');
+						data_in_1 <= '0';
+					
+					
+					end if;
+						
+						data_in_1 <= data_in; -- delays the data one clock cycle for easy counting
+						
+						R(0) <= data_in_1 XOR (G(0) AND  R(31));
+					
+						R(30 downto 1) <= R(29 downto 0) XOR (G(30 downto 1) AND (30 downto 1 => R(31)));
+							
+						R(31) <= R(30) XOR (G(31) AND R(31));
+						
+						
+						
+					
+							-- Look for end flag, if found count to 32, and get the result !!! 
+						if(end_of_frame = '1') then
+						
+							-- enable our end counter
+							end_cnt <= 1;
+						end if;	
+					
+						if(end_cnt > 0) then
+							-- counter enabled! Increment
+							if(end_cnt < 34) then -- WHY??? !!!!!!!!!!!!!!!!!!!! This should not happen
+							
+							end_cnt <= end_cnt+1;
+							end if;
+							
+						end if;
+						
+						
+						if(end_cnt = 34) then
+							 -- Woah! check the registers now!
+							 end_cnt <= 0;
+							 
+							 assert true report "Checking!!!";
+							 -- Check if the result is OK
+							 if(R = zeros) then
+							 
+							  fcs_error <= '0';
+								--!!!!  TODO: implement so fcs_error becomes 1 at next start!
+							 end if;
+					 
+					
+						end if;
+			
+			
+			end if;
+	end process main;
+	
+
+end fcs_check_serial_arch;

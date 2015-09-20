@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/FPGA_projects/SerialFCS
+Efcs_check_serial
+Z1 w1442762867
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:\FPGA_projects\SerialFCS\fcs_check_serial.vhd
+Z5 FC:\FPGA_projects\SerialFCS\fcs_check_serial.vhd
+l0
+L5
+VeX;;LFGh]6eEa2NMQ0TBg0
+!s100 A9fhcR9Cl@2_Ga7NLaD;K2
+Z6 OV;C;10.3d;59
+32
+Z7 !s110 1442762871
+!i10b 1
+Z8 !s108 1442762871.125000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\FPGA_projects\SerialFCS\fcs_check_serial.vhd|
+Z10 !s107 C:\FPGA_projects\SerialFCS\fcs_check_serial.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1
+Afcs_check_serial_arch
+R2
+R3
+DEx4 work 16 fcs_check_serial 0 22 eX;;LFGh]6eEa2NMQ0TBg0
+l30
+L17
+V:=<K[YCoka=J]LnD6B8^n1
+!s100 >Q4No_EB]ElX1`o5:L7MU2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Efcs_check_serial_tb
+Z13 w1442762641
+R2
+R3
+R0
+Z14 8C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+Z15 FC:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+l0
+L6
+VLGkdj>C;Hm6BXZ<ESkZjI1
+!s100 F87YmK[b`AlS38mdYA>zo2
+R6
+32
+R7
+!i10b 1
+Z16 !s108 1442762871.671000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd|
+Z18 !s107 C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd|
+!i113 1
+R11
+R12
+Afcs_check_serial_tb_arch
+R2
+R3
+DEx4 work 19 fcs_check_serial_tb 0 22 LGkdj>C;Hm6BXZ<ESkZjI1
+l42
+L12
+V2LZ29eGMGi:]]00Y]E0Di3
+Z19 !s100 iV`Uboan6L?EQoAGLLQkF1
+R6
+32
+R7
+!i10b 1
+R16
+R17
+R18
+!i113 1
+R11
+R12

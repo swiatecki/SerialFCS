@@ -1,0 +1,488 @@
+vsim work.fcs_check_serial_tb
+# vsim 
+# Start time: 15:20:37 on Sep 16,2015
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.fcs_check_serial_tb(fcs_check_serial_tb_arch)
+# Loading work.fcs_check_serial(fcs_check_serial_arch)
+run 500 ns
+view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+add wave -position insertpoint  \
+sim:/fcs_check_serial_tb/fcs_error \
+sim:/fcs_check_serial_tb/reset \
+sim:/fcs_check_serial_tb/start_of_frame \
+sim:/fcs_check_serial_tb/end_of_frame \
+sim:/fcs_check_serial_tb/data_in \
+sim:/fcs_check_serial_tb/clk \
+sim:/fcs_check_serial_tb/i \
+sim:/fcs_check_serial_tb/P
+run 500 ns
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:25:38 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial_tb
+# -- Compiling architecture fcs_check_serial_tb_arch of fcs_check_serial_tb
+# ** Error: C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd(73): near "i": syntax error
+# ** Error: C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd(79): Target of signal assignment is not a signal.
+# ** Error: C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd(79): No feasible entries for infix operator "-".
+# ** Error: C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd(79): Type error resolving infix expression "-" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd(87): VHDL Compiler exiting
+# End time: 15:25:38 on Sep 16,2015, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# C:/altera/15.0/modelsim_ase/win32aloem/vcom failed.
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:28:13 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial_tb
+# -- Compiling architecture fcs_check_serial_tb_arch of fcs_check_serial_tb
+# ** Error: C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd(83): Target of signal assignment is not a signal.
+# ** Error: C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd(83): No feasible entries for infix operator "-".
+# ** Error: C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd(83): Type error resolving infix expression "-" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd(92): VHDL Compiler exiting
+# End time: 15:28:13 on Sep 16,2015, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# C:/altera/15.0/modelsim_ase/win32aloem/vcom failed.
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:28:41 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial_tb
+# -- Compiling architecture fcs_check_serial_tb_arch of fcs_check_serial_tb
+# End time: 15:28:42 on Sep 16,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.fcs_check_serial_tb(fcs_check_serial_tb_arch)
+run 500 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+restart -f
+run 50 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:31:19 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial_tb
+# -- Compiling architecture fcs_check_serial_tb_arch of fcs_check_serial_tb
+# End time: 15:31:20 on Sep 16,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.fcs_check_serial_tb(fcs_check_serial_tb_arch)
+run 50 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+
+# WARNING: No extended dataflow license exists
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:33:39 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial_tb
+# -- Compiling architecture fcs_check_serial_tb_arch of fcs_check_serial_tb
+# End time: 15:33:40 on Sep 16,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.fcs_check_serial_tb(fcs_check_serial_tb_arch)
+run 50 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Fatal: (vsim-3421) Value -1 is out of range 0 to 512.
+#    Time: 10 ns  Iteration: 1  Process: /fcs_check_serial_tb/dataFeeder File: C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+# Fatal error in Process dataFeeder at C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd line 80
+# 
+# HDL call sequence:
+# Stopped at C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd 80 Process dataFeeder
+# 
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:34:47 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial_tb
+# -- Compiling architecture fcs_check_serial_tb_arch of fcs_check_serial_tb
+# End time: 15:34:48 on Sep 16,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.fcs_check_serial_tb(fcs_check_serial_tb_arch)
+run 50 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+restart -f
+run 200 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:36:55 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial_tb
+# -- Compiling architecture fcs_check_serial_tb_arch of fcs_check_serial_tb
+# End time: 15:36:56 on Sep 16,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.fcs_check_serial_tb(fcs_check_serial_tb_arch)
+run 200 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:39:21 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial_tb
+# -- Compiling architecture fcs_check_serial_tb_arch of fcs_check_serial_tb
+# End time: 15:39:22 on Sep 16,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart -f; run 200 ns
+# Loading work.fcs_check_serial_tb(fcs_check_serial_tb_arch)
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:42:35 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial_tb
+# -- Compiling architecture fcs_check_serial_tb_arch of fcs_check_serial_tb
+# End time: 15:42:35 on Sep 16,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f; run 200 ns
+# Loading work.fcs_check_serial_tb(fcs_check_serial_tb_arch)
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:43:23 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial_tb
+# -- Compiling architecture fcs_check_serial_tb_arch of fcs_check_serial_tb
+# ** Error: C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd(76): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd(77): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd(78): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd(97): VHDL Compiler exiting
+# End time: 15:43:23 on Sep 16,2015, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# C:/altera/15.0/modelsim_ase/win32aloem/vcom failed.
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:43:51 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial_tb
+# -- Compiling architecture fcs_check_serial_tb_arch of fcs_check_serial_tb
+# End time: 15:43:51 on Sep 16,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f; run 200 ns
+# Loading work.fcs_check_serial_tb(fcs_check_serial_tb_arch)
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:45:28 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial_tb
+# -- Compiling architecture fcs_check_serial_tb_arch of fcs_check_serial_tb
+# End time: 15:45:28 on Sep 16,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f; run 2000 ns
+# Loading work.fcs_check_serial_tb(fcs_check_serial_tb_arch)
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:52:47 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial_tb
+# -- Compiling architecture fcs_check_serial_tb_arch of fcs_check_serial_tb
+# End time: 15:52:48 on Sep 16,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart -f; run 2000 ns
+# Loading work.fcs_check_serial_tb(fcs_check_serial_tb_arch)
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+restart -f; run 200000 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Fatal: (vsim-3421) Value 33 is out of range 0 to 32.
+#    Time: 10250 ns  Iteration: 1  Process: /fcs_check_serial_tb/fcs/line__37 File: ./fcs_check_serial.vhd
+# Fatal error in Process line__37 at ./fcs_check_serial.vhd line 80
+# 
+# HDL call sequence:
+# Stopped at ./fcs_check_serial.vhd 80 Process line__37
+# 
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:54:03 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial
+# -- Compiling architecture fcs_check_serial_arch of fcs_check_serial
+# End time: 15:54:04 on Sep 16,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:54:08 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial_tb
+# -- Compiling architecture fcs_check_serial_tb_arch of fcs_check_serial_tb
+# End time: 15:54:08 on Sep 16,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f; run 200000 ns
+# Loading work.fcs_check_serial_tb(fcs_check_serial_tb_arch)
+# Loading work.fcs_check_serial(fcs_check_serial_arch)
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Fatal: (vsim-3421) Value 34 is out of range 0 to 33.
+#    Time: 10270 ns  Iteration: 1  Process: /fcs_check_serial_tb/fcs/line__37 File: C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd
+# Fatal error in Process line__37 at C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd line 80
+# 
+# HDL call sequence:
+# Stopped at C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd 80 Process line__37
+# 
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:56:05 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial
+# -- Compiling architecture fcs_check_serial_arch of fcs_check_serial
+# ** Error: C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd(79): near ":": syntax error
+# ** Error: C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd(106): VHDL Compiler exiting
+# End time: 15:56:05 on Sep 16,2015, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/altera/15.0/modelsim_ase/win32aloem/vcom failed.
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:56:13 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial
+# -- Compiling architecture fcs_check_serial_arch of fcs_check_serial
+# End time: 15:56:14 on Sep 16,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:56:16 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial_tb
+# -- Compiling architecture fcs_check_serial_tb_arch of fcs_check_serial_tb
+# End time: 15:56:16 on Sep 16,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f; run 200000 ns
+# Loading work.fcs_check_serial_tb(fcs_check_serial_tb_arch)
+# Loading work.fcs_check_serial(fcs_check_serial_arch)
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Fatal: (vsim-3421) Value 34 is out of range 0 to 33.
+#    Time: 10270 ns  Iteration: 1  Process: /fcs_check_serial_tb/fcs/line__37 File: C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd
+# Fatal error in Process line__37 at C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd line 81
+# 
+# HDL call sequence:
+# Stopped at C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd 81 Process line__37
+# 
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:57:27 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial
+# -- Compiling architecture fcs_check_serial_arch of fcs_check_serial
+# End time: 15:57:28 on Sep 16,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:57:28 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial_tb
+# -- Compiling architecture fcs_check_serial_tb_arch of fcs_check_serial_tb
+# End time: 15:57:28 on Sep 16,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f; run 200000 ns
+# Loading work.fcs_check_serial_tb(fcs_check_serial_tb_arch)
+# Loading work.fcs_check_serial(fcs_check_serial_arch)
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:03:18 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial
+# -- Compiling architecture fcs_check_serial_arch of fcs_check_serial
+# End time: 16:03:19 on Sep 16,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:03:19 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial_tb
+# -- Compiling architecture fcs_check_serial_tb_arch of fcs_check_serial_tb
+# ** Error: C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd(96): near ";": expecting THEN
+# ** Error: C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd(106): near "if": expecting PROCESS
+# End time: 16:03:19 on Sep 16,2015, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/altera/15.0/modelsim_ase/win32aloem/vcom failed.
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:03:42 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial
+# -- Compiling architecture fcs_check_serial_arch of fcs_check_serial
+# End time: 16:03:42 on Sep 16,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:03:42 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial_tb
+# -- Compiling architecture fcs_check_serial_tb_arch of fcs_check_serial_tb
+# End time: 16:03:43 on Sep 16,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart -f; run 200000 ns
+# Loading work.fcs_check_serial_tb(fcs_check_serial_tb_arch)
+# Loading work.fcs_check_serial(fcs_check_serial_arch)
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+restart -f; run 12000 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:08:03 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial_tb
+# -- Compiling architecture fcs_check_serial_tb_arch of fcs_check_serial_tb
+# End time: 16:08:04 on Sep 16,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart -f; run 12000 ns
+# Loading work.fcs_check_serial_tb(fcs_check_serial_tb_arch)
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/FPGA_projects/SerialFCS/wave.do
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:14:51 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial_tb
+# -- Compiling architecture fcs_check_serial_tb_arch of fcs_check_serial_tb
+# ** Error: C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd(65): Illegal target for signal assignment.
+# ** Error: C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd(65): (vcom-1136) Unknown identifier "P".
+# 
+# ** Error: C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd(90): (vcom-1136) Unknown identifier "P".
+# 
+# ** Error: C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd(115): VHDL Compiler exiting
+# End time: 16:14:51 on Sep 16,2015, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# C:/altera/15.0/modelsim_ase/win32aloem/vcom failed.
+vcom C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:15:17 on Sep 16,2015
+# vcom -reportprogress 300 C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fcs_check_serial_tb
+# -- Compiling architecture fcs_check_serial_tb_arch of fcs_check_serial_tb
+# End time: 16:15:18 on Sep 16,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart -f; run 12000 ns
+# Loading work.fcs_check_serial_tb(fcs_check_serial_tb_arch)
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/FPGA_projects/SerialFCS/wave.do
+# Break key hit
