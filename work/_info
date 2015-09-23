@@ -9,23 +9,23 @@ z2
 cModel Technology
 Z0 dC:/FPGA_projects/SerialFCS
 Efcs_check_serial
-Z1 w1443011154
+Z1 w1443013671
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z4 8C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd
-Z5 FC:/FPGA_projects/SerialFCS/fcs_check_serial.vhd
+Z4 8C:\FPGA_projects\SerialFCS\fcs_check_serial.vhd
+Z5 FC:\FPGA_projects\SerialFCS\fcs_check_serial.vhd
 l0
 L5
 VeX;;LFGh]6eEa2NMQ0TBg0
 !s100 A9fhcR9Cl@2_Ga7NLaD;K2
 Z6 OV;C;10.3d;59
 32
-Z7 !s110 1443011163
+Z7 !s110 1443013675
 !i10b 1
-Z8 !s108 1443011163.960000
-Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd|
-Z10 !s107 C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd|
+Z8 !s108 1443013675.030000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\FPGA_projects\SerialFCS\fcs_check_serial.vhd|
+Z10 !s107 C:\FPGA_projects\SerialFCS\fcs_check_serial.vhd|
 !i113 1
 Z11 o-work work -2002 -explicit
 Z12 tExplicit 1
@@ -35,8 +35,8 @@ R3
 DEx4 work 16 fcs_check_serial 0 22 eX;;LFGh]6eEa2NMQ0TBg0
 l30
 L17
-V12<21<14DaKZhP?MgPj[H2
-!s100 2PQ^HhjISSL>]AGNRM@Th0
+VI4c@aOXi`<J3=D_ec6Uc[2
+!s100 6?i7mL;dTTFQ267XjR]no1
 R6
 32
 R7
@@ -48,7 +48,7 @@ R10
 R11
 R12
 Efcs_check_serial_tb
-Z13 w1443010741
+Z13 w1443013108
 R2
 R3
 R0
@@ -60,29 +60,29 @@ VLGkdj>C;Hm6BXZ<ESkZjI1
 !s100 F87YmK[b`AlS38mdYA>zo2
 R6
 32
-Z16 !s110 1443011164
+R7
 !i10b 1
-Z17 !s108 1443011164.578000
-Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\FPGA_projects\SerialFCS\fcs_check_serial_tb.vhd|
-Z19 !s107 C:\FPGA_projects\SerialFCS\fcs_check_serial_tb.vhd|
+Z16 !s108 1443013675.642000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\FPGA_projects\SerialFCS\fcs_check_serial_tb.vhd|
+Z18 !s107 C:\FPGA_projects\SerialFCS\fcs_check_serial_tb.vhd|
 !i113 1
 R11
 R12
 Afcs_check_serial_tb_arch
 R2
 R3
-Z20 DEx4 work 19 fcs_check_serial_tb 0 22 LGkdj>C;Hm6BXZ<ESkZjI1
+Z19 DEx4 work 19 fcs_check_serial_tb 0 22 LGkdj>C;Hm6BXZ<ESkZjI1
 l42
 L12
-Z21 VgNRX2m^S2aY?aY4R<7VAB3
-Z22 !s100 <li50z4da_mWKolP8IR`j2
+Z20 V:cVmYR@bIkGQdcEA99Sgd0
+Z21 !s100 7gIG6EE4i[YJZZmSHFzKL2
 R6
 32
-R16
+R7
 !i10b 1
+R16
 R17
 R18
-R19
 !i113 1
 R11
 R12

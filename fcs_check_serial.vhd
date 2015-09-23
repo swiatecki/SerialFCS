@@ -21,7 +21,7 @@ architecture fcs_check_serial_arch of fcs_check_serial is
 	
 	signal data_in_1 : std_logic;
 	
-	signal frame_cnt : integer range 0 to 31;
+	signal start_cnt : integer range 0 to 33;
 	
 	signal end_cnt : integer range 0 to 34; -- 0 is not used for counting, but for enable flag
 	
@@ -39,7 +39,7 @@ BEGIN
 				
 				end_cnt <= 0;
 				fcs_error <= '1';
-				
+				start_cnt <= 0;
 				data_in_1 <= '0';
 				
 			R <= (others => '0');
@@ -53,22 +53,43 @@ BEGIN
 						-- reset R 
 						R <= (others => '0');
 						data_in_1 <= '0';
+						start_cnt <= 1;
 					
 					
 					end if;
-						
+						-- This is the generalt case, inversions appear below
 						data_in_1 <= data_in; -- delays the data one clock cycle for easy counting
 						
 						
-						
-						
-					
+	
 							-- Look for end flag, if found count to 32, and get the result !!! 
 						if(end_of_frame = '1') then
 						
 							-- enable our end counter
 							end_cnt <= 1;
 						end if;	
+
+						if(start_cnt > 0) then
+							-- we are counting gentlemen!
+
+							if start_cnt = 33 then -- compensate for delay?
+
+								start_cnt <= 0;
+
+							elsif start_cnt <= 32 then
+								start_cnt <= start_cnt+1;
+								-- between 0 and 
+								data_in_1 <= not data_in;
+							
+								
+							
+
+							end if;
+							
+							
+
+						end if;
+
 					
 						if(end_cnt > 0) then
 							-- counter enabled! Increment
