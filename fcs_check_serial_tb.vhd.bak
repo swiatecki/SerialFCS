@@ -64,7 +64,7 @@ stimulus : PROCESS
 	
    begin
 	
-	P <= not P1(511 downto 480) & P1(479 downto 32) & not P1(31 downto 0);
+	-- before end invertion P <= not P1(511 downto 480) & P1(479 downto 32) & not P1(31 downto 0);
 	
    wait for 5 ns; reset  <= '1';
    wait for 14 ns; reset  <= '0';
@@ -106,9 +106,9 @@ begin
 						end_of_frame <= '0';
 					end if;
 					
-					
+					if i>0 then
 					i<= i-1;
-
+					end if;
 			end if;
 		end if;
 			

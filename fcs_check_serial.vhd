@@ -59,11 +59,6 @@ BEGIN
 						
 						data_in_1 <= data_in; -- delays the data one clock cycle for easy counting
 						
-						R(0) <= data_in_1 XOR (G(0) AND  R(31));
-					
-						R(30 downto 1) <= R(29 downto 0) XOR (G(30 downto 1) AND (30 downto 1 => R(31)));
-							
-						R(31) <= R(30) XOR (G(31) AND R(31));
 						
 						
 						
@@ -81,8 +76,23 @@ BEGIN
 							
 							end_cnt <= end_cnt+1;
 							end if;
+						-- If we are in the final 32 bits, invert theese! 
+
+							data_in_1 <= not data_in;
+
 							
 						end if;
+
+
+
+
+
+						R(0) <= data_in_1 XOR (G(0) AND  R(31));
+					
+						R(30 downto 1) <= R(29 downto 0) XOR (G(30 downto 1) AND (30 downto 1 => R(31)));
+							
+						R(31) <= R(30) XOR (G(31) AND R(31));
+						
 						
 						
 						if(end_cnt = 34) then

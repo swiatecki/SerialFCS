@@ -1,12 +1,4 @@
-C:/FPGA_projects/SerialFCS/fcs_check_serial.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\FPGA_projects\SerialFCS\fcs_check_serial.vhd}
-Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity fcs_check_serial
--- Compiling architecture fcs_check_serial_arch of fcs_check_serial
-
-} {} {}} C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
+C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/FPGA_projects/SerialFCS/fcs_check_serial_tb.vhd
 Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
 -- Loading package STANDARD
 -- Loading package TEXTIO
